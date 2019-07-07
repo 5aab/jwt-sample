@@ -5,7 +5,7 @@ spring:
       driver-class-name: org.h2.Driver
       username: sa
       password:
-      connection-init-sql: RUNSCRIPT FROM 'classpath:/data-h2.sql'
+      connection-init-sql: RUNSCRIPT FROM 'classpath:/data-h2.sql';RUNSCRIPT FROM 'classpath:/data-h3.sql'
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
   h2:
